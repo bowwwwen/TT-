@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TalenTag — AI 履歷標籤</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* 飄浮動畫 */
+    @keyframes float {
+      0%,100% { transform: translateY(0) }
+      50% { transform: translateY(-10px) }
+    }
+    .float { animation: float 3s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- 導覽列 -->
+  <nav class="fixed w-full bg-white shadow-md">
+    <div class="max-w-4xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center">
+        <img src="assets/logo.svg" class="h-8 mr-2" alt="Logo">
+        <span class="font-bold text-xl">TalenTag</span>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="hover:text-blue-500">Home</a>
+        <a href="#features" class="hover:text-blue-500">Features</a>
+        <a href="#faq" class="hover:text-blue-500">FAQ</a>
+        <a href="#join-beta" class="px-4 py-1 bg-blue-500 text-white rounded">Join Beta</a>
+      </div>
+      <button class="md:hidden">
+        <!-- 漢堡選單 icon -->
+        <svg /* ... */></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero 區塊 -->
+  <section class="pt-24 max-w-4xl mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 p-6">
+      <h1 class="text-4xl font-bold mb-4">AI 智能履歷分析</h1>
+      <p class="mb-6">自動為你的履歷打上精準技能標籤，快速找到心儀工作。</p>
+      <a href="loading.html" class="px-6 py-3 bg-blue-500 text-white rounded">Analyze My Resume</a>
+    </div>
+    <div class="md:w-1/2 p-6">
+      <div class="bg-white p-4 rounded-lg shadow-lg float">
+        <div class="h-24 bg-gray-200 rounded mb-3"></div>
+        <h2 class="font-semibold">Emma Chen</h2>
+        <div class="flex space-x-2 mt-2">
+          <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded">Python</span>
+          <span class="px-2 py-1 bg-green-100 text-green-600 rounded">Data Analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features, FAQ, Footer…略 -->
+
+</body>
+</html>
